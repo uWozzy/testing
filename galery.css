@@ -1,0 +1,63 @@
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.picture {
+  border-radius: 3%;
+  display: none;
+  width: 100%;
+  height: 500px;
+  margin: 5px;
+  overflow: hidden;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+body {
+  background-color: aqua;
+}
+#toggler1:checked ~ .picture1 {
+  display: block;
+}
+#toggler2:checked ~ .picture2 {
+  display: block;
+}
+#toggler3:checked ~ .picture3 {
+  display: block;
+}
+#toggler4:checked ~ .picture4 {
+  display: block;
+}
+#toggler5:checked ~ .picture5 {
+  display: block;
+}
+#toggler6:checked ~ .picture6 {
+  display: block;
+}
+input[type="radio"] {
+  display: none;
+}
+
+.labels {
+  display: block;
+  display: flex;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.first {
+  border-radius: 10%;
+  width: 150px;
+  height: 100px;
+  margin: 5px;
+}
+.first:hover {
+  transform: scale(1.05);
+}
+.all {
+  width: 960px;
+  overflow: hidden;
+  margin: auto;
+}
